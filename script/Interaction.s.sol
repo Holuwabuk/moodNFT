@@ -8,8 +8,8 @@ contract mintBasicNFT is Script {
     string public constant PUG = "ipfs://bafkreigp76b37nlj6c5noqnikovrm3rep5ubglcjbh5jzyeqdgi3mtajgm";
 
     function run() external {
-       address mostRecentlyDeployed = DevOpsTools.get_most_recent_deployment("BasicNFT", block.chainid); //we always want to use the most recently deployed, hence install DevOps using  forge install ChainAccelOrg/foundry-devops --no-git
-       mintNFTOnContract(mostRecentlyDeployed);
+        address mostRecentlyDeployed = DevOpsTools.get_most_recent_deployment("BasicNFT", block.chainid); //we always want to use the most recently deployed, hence install DevOps using  forge install ChainAccelOrg/foundry-devops --no-git
+        mintNFTOnContract(mostRecentlyDeployed);
     }
 
     function mintNFTOnContract(address contractAddress) public {
@@ -17,7 +17,6 @@ contract mintBasicNFT is Script {
         BasicNFT(contractAddress).mintNFT(PUG);
         vm.stopBroadcast();
     }
-
 }
 
 //This interraction contract is to mint, should in case you don't want to use "cast" from the terminal

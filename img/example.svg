@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500"><text x="0" y="15" fill="black">hi! You decoded this! </text></svg>
+
+
+
+
+
+//Write the code as above
+//Then go to d folder where the example.svg is
+//Run in the command "base64 -i example.svg", then copy the output url
+//For e.g.....enter data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj4KICAgIDx0ZXh0IHg9IjAiIHk9IjE1IiBmaWxsPSJibGFjayI+aGkhIFlvdSBkZWNvZGVkIHRoaXMhIDwvdGV4dD4KPC9zdmc+Cgo=      in README...can enter any browser, would show the encoded text
+

@@ -20,4 +20,6 @@ deploy-anvil:
 
 mint:
 	@forge script script/Interaction.s.sol:mintBasicNFT $(NETWORK_ARGS) 
-	
+
+deploy-moodNFT:
+	@forge script script/DeployMoodNFT.s.sol:DeployMoodNFT $(NETWORK_ARGS)
